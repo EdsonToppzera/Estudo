@@ -1,0 +1,21 @@
+10 HTML Tags used:
+- <div>
+- <h1>
+- <hr>
+- <p>
+- <h2>
+- <img>
+- <button>
+- <link>
+- <script>
+- <a>
+
+5 CSS Properties used:
+- background-color
+- color
+- font-size
+- font-weight
+- margin
+
+How did I use Bootstrap and JavaScript in my code:
+    I used Bootstrap Accordion to the review segment on my top 3 for each rank,...

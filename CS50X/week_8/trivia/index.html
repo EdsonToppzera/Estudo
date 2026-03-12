@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            document.addEventListener("DOMContentLoaded", bcerto);
+            document.addEventListener("DOMContentLoaded", berrado);
+            document.addEventListener("DOMContentLoaded", respostaf);
+            function bcerto()
+            {
+                document.querySelector(".certo").addEventListener("click", function() {
+                    this.style.backgroundColor = "#008000";
+                    document.querySelector("#feedback1").innerHTML="Correct!"
+                });
+            }
+            function berrado()
+            {
+                let errados = document.querySelectorAll(".errado");
+                for (let i=0;i<errados.length;i++)
+                {
+                    errados[i].addEventListener("click", function() {
+                        this.style.backgroundColor = "#ff0000";
+                        document.querySelector("#feedback1").innerHTML="Incorrect."
+                    });
+                }
+            }
+
+            document.querySelector("form");
+            document.addEventListener("submit",respostaf);
+            function respostaf(event)
+            {
+                if (document.querySelector("#resposta").value=="")
+                {
+                    document.querySelector("#resposta").style.backgroundColor = "";
+                }
+                else if (document.querySelector("#resposta").value=="Mushoku Tensei")
+                {
+                    document.querySelector("#resposta").style.backgroundColor = "#008000";
+                    document.querySelector("#feedback2").innerHTML="Correct!";
+                }
+                else
+                {
+                    document.querySelector("#resposta").style.backgroundColor = "#ff0000";
+                    document.querySelector("#feedback2").innerHTML="Incorrect.";
+                }
+                event.preventDefault();
+            }
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                 <h3>What is the country with the highest number of  pet dogs?</h3>
+
+                 <button class="certo">USA</button>
+                 <button class="errado">Brazil</button>
+                 <button class="errado">Canada</button>
+                 <button class="errado">Chad</button>
+                 <p id="feedback1"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                 <h3>Which anime is considered the best fantasy anime of the decade?</h3>
+
+                 <form>
+                    <input autocomplete="off" id="resposta" placeholder="Answer" type="text">
+                    <button type="submit">Check Answer</button>
+                 </form>
+                 <p id="feedback2"></p>
+            </div>
+        </div>
+    </body>
+</html>

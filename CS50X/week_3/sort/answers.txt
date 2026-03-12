@@ -1,0 +1,11 @@
+sort1 uses: Bubble sort
+
+How do you know?: It was almost the quickest at the sorted list, olny passing a single time on the list and noticing that it didn't do any swaps.
+
+sort2 uses: Merge sort
+
+How do you know?: It was the quickest at the random list and stayed consistent on the other 2.
+
+sort3 uses: Selection sort
+
+How do you know?: Didn't do exceptionally well or bad on any of the list.

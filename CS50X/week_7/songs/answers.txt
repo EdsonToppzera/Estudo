@@ -1,0 +1,4 @@
+1. I would average their songs "stats" like danceability etc.
+And finnaly compare each average to put the them in an audio aura category that fits the best.
+
+2. Its impossible to perfectly describe a person only through algorithms, their audio aura is only a reponse based on their music taste.
