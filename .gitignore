@@ -1,0 +1,35 @@
+### --- C / CS50x --- ###
+# Ignora executáveis (arquivos sem extensão gerados pelo 'make')
+# Como o C no Linux gera binários sem extensão, ignoramos quase tudo e abrimos exceções
+*
+!*/
+!*.c
+!*.h
+!*.py
+!*.sql
+!*.html
+!*.css
+!*.js
+!*.csv
+!*.md
+!.gitignore
+
+# Ignora arquivos de objeto e dumps
+*.o
+*.out
+
+### --- Python / CS50P --- ###
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+### --- Databases --- ###
+*.db
+*.sqlite3
+
+### --- OS / IDEs --- ###
+.DS_Store
+Thumbs.db
+.vscode/
